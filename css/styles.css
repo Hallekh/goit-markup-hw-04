@@ -125,6 +125,22 @@ header nav .logo {
   color: var(--pressed-state-color);
 }
 
+.current {
+color: var(--pressed-state-color);
+
+}
+.current::after {
+  content: '';
+  position: absolute;
+  color: var(--pressed-state-color);
+  left: 0; 
+  bottom: -1px; 
+  height: 4px; 
+  width: 100%;
+  background-color: var(--pressed-state-color);
+  border-radius: 2px;
+}
+
 .contacts {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -370,13 +386,17 @@ header nav .logo {
 
 .customers {
   padding: 120px 0;
+  margin: 0 auto;
 }
 
 .customers-title {
   font-size: 36px;
   line-height: 1.11;
-  margin-bottom: 72px; 
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .customers-list {
