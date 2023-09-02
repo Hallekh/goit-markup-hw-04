@@ -234,6 +234,10 @@ header nav .logo {
   margin-bottom: 8px;  
 }
 
+.feature-icon {
+  fill: var(--dark-color);
+}
+
 .features-title {
   font-weight: 500;
   font-size: 20px;
@@ -317,6 +321,7 @@ header nav .logo {
 .social-media {
   width: 40px; 
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -382,11 +387,12 @@ header nav .logo {
   width: 100%;
   height: 100%;
   border: 1px solid var(--subtle-text-color);
-  border-radius: зі значенням 4px;
+  border-radius: 4px;
   display: flex; 
   align-items: center; 
   justify-content: center; 
   color: var(--subtle-text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .customers-link:hover,
@@ -400,9 +406,18 @@ border-color: var(--pressed-state-color);
 }
 
 .foo {
-  display: flex;
   background-color: var(--dark-color);
   padding: 100px 0;
+}
+
+.foo-box {
+  display: flex;
+  flex-shrink: 0;
+  align-items: baseline;
+}
+
+.logo-box {
+  margin-right: 120px;
 }
 
 footer a {
@@ -417,6 +432,26 @@ footer a {
   margin-bottom: 16px;
 }
 
+.foo-media-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-background-color);
+  margin-bottom: 16px; 
+}
+
+.foo-media-list {
+  display: flex;
+  gap: 16px; 
+
+}
+
+.foo-media {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
 .accent {
   color: var(--light-background-color);
 }
@@ -426,6 +461,10 @@ footer a {
   letter-spacing: 0.02em;
   color: var(--light-background-color);
   max-width: 264px;
+}
+
+.foo-icon {
+  fill: var(--light-background-color);
 }
 
 .portfolio {
