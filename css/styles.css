@@ -47,7 +47,7 @@ img {
 }
 
 .icon {
-  fill: white;
+  fill: var(--light-background-color)
 }
 
 .logo-accent {
@@ -356,6 +356,47 @@ header nav .logo {
 .team {
   line-height: 1.5;
   text-align: center;
+}
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  margin-bottom: 72px; 
+  color: var(--dark-color);
+}
+
+.customers-list {
+  gap: 24px; 
+}
+
+.customer {
+  width: calc((100% - 120px) / 6); 
+  height: 88px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: зі значенням 4px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: var(--subtle-text-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+color: var(--pressed-state-color);
+border-color: var(--pressed-state-color);
+}
+
+.customer-icon {
+  fill: currentColor;
 }
 
 .foo {
