@@ -309,6 +309,7 @@ header nav .logo {
 }
 
 .foo {
+  display: flex;
   background-color: var(--dark-color);
   padding: 100px 0;
 }
